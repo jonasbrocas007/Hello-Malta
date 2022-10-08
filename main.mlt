@@ -1,0 +1,91 @@
+:start
+.          _______  _        _        _______      _______  _______  _    _________ _______ 
+.|\     /|(  ____ \( \      ( \      (  ___  )    (       )(  ___  )( \   \__   __/(  ___  )
+.| )   ( || (    \/| (      | (      | (   ) |    | () () || (   ) || (      ) (   | (   ) |
+.| (___) || (__    | |      | |      | |   | |    | || || || (___) || |      | |   | (___) |
+.|  ___  ||  __)   | |      | |      | |   | |    | |(_)| ||  ___  || |      | |   |  ___  |
+.| (   ) || (      | |      | |      | |   | |    | |   | || (   ) || |      | |   | (   ) |
+.| )   ( || (____/\| (____/\| (____/\| (___) |    | )   ( || )   ( || (____/\| |   | )   ( |
+.|/     \|(_______/(_______/(_______/(_______)    |/     \||/     \|(_______/)_(   |/     \|
+.
+.What you want to learn?
+<a = 0
+.1 - Print
+.2 - Variables
+.3 - Memory Managment
+.4 - loops
+.5 - types and numbers
+.6 - if statements
+$a
+
+if a = 1: goto 27
+if a = 2: goto 33
+if a = 3: goto 44
+if a = 4: goto 53
+if a = 5: goto 68
+if a = 6: goto 82
+
+.To print something you use the . (point) keyword and to print a variable you use the > keyword
+.Print Hello World with .(point)Hello World
+.Print a varible with > var
+goto start
+
+
+.To create a variable you use the < keyword
+.<var
+
+.To input into a variable you use the $ keyword
+.$var
+
+.To increment a variable use the ++ keyword
+.var++
+goto start
+
+
+.In MaltaLang all of the variables are stored in the all mighty allvarlist, you can see that using mem
+.mem
+
+.Garbage collection
+.In MaltaLang you need to call the garbage collection with the c keyword
+.c
+goto start
+
+
+.In MaltaLang to make a loop you need to use gotos and the goto logic, can use stamps to go back and lines to go back and forward
+.Create a stamp with :
+.:stamp
+
+.Create a goto with goto
+.goto stamp
+.goto 8 (goto line 8)
+
+.Note:
+.In Maltalang v1 you can make a loop with the lp keyword but it won't be much covered here
+.It works similar to the if lp .hello world 5
+.that loops printing hello world 5 times
+goto start
+
+
+.There are no types in MaltaLang!
+.But there are "numbers" and you can make a operation with op and ov
+
+.op serves to make a calculation using 2 numbers
+.op 1+1
+
+.ov serves to make a calculation using 2 variables
+.ov a + b >> result
+
+.Note:
+.to make operations you use the +,-,x,/,^ keywords, respectibly plus, minus, multiply, divide and power
+goto start
+
+
+.with if you only can program one line, for example you cannot condition multiple commands, only one.
+.the if has multiple parts: if, the condition and the command to do after.
+.if a = 1: >a
+
+.the and keyword:
+.you can condition with 2 conditions with and in the operator
+.if a = 1: and b = 2: .hello world
+goto start
+END
